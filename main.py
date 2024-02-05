@@ -7,7 +7,7 @@ openai.api_key=environ.get('OPENAI_API_KEY')
 
 # Pre-defined Prompts
 greetings_prompt = "Make a response saying: 'Hello! I am an AI Powered Language Translator Tool. (Type 'END' if you wish to close the Tool anytime !)'"
-insert_language_prompt = "Make a response saying: 'Kindly insert the language you wish your text to be converted to.'"
+insert_language_prompt = "Make a response saying: 'Kindly specify the language you would like your text to be translated into?'"
 insert_text_prompt = "Make a response saying: 'Kindly insert the Text.'"
 ending_prompt = "Make a response saying: 'Thank You!.'"
 
