@@ -23,6 +23,10 @@ In the context of text generation models, "tokens" refer to units of text that t
 For example, in the sentence "ChatGPT is great!", if we tokenize it at the word level, the tokens would be: ["ChatGPT", "is", "great", "!"]. If we tokenize it at the character level, the tokens might be: ["C", "h", "a", "t", "G", "P", "T", " ", "i", "s", " ", "g", "r", "e", "a", "t", "!"].
 <br/><br/>
 
+## Prompts
+A "prompt" in the context of natural language processing and text generation refers to the input or instruction provided to a language model to generate a response. It's a specific text or set of instructions that you give to the model to elicit a particular kind of output. In the case of a conversational model, a prompt can be a series of messages where each message has a role (e.g., "system," "user," or "assistant") and content (the actual text of the message). The conversation prompt helps set the context for the model's response.
+<br/><br/>
+
 # Steps to Run the Tool
 - Create a .env file with the following content:-<br>
 ```OPENAI_API_KEY=<YOUR-API-KEY>```
@@ -39,3 +43,4 @@ Follow [this](https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-cha
 - Free credit expires after 3 months. (Even if free credit is not completely utilized)
 - Here we have used gpt-3.5-turbo. As of 05 Feb 2024, it's pricing structure follows $0.0015 / 1K tokens.
 - Check [here](https://openai.com/pricing) for official pricing structure.
+- OpenAI Documentation: [Click Here](https://platform.openai.com/docs/overview)

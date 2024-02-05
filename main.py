@@ -13,6 +13,7 @@ insert_text_prompt = "Make a response saying: 'Kindly insert the Text.'"
 ending_prompt = "Make a response saying: 'Thank You!.'"
 
 # Greetings Prompt
+# Roles can be system/user/assistant (Refer Documentation)
 conversations = [
     {"role": "system", "content": "You are an AI assistant that performs Language Translation."},
     {"role": "user", "content": greetings_prompt},
@@ -21,6 +22,7 @@ greetings_prompt_response = openai.chat.completions.create(
   model="gpt-3.5-turbo",
   messages=conversations
 )
+# We keep appending the responses to store the conversation history so that the model can refer to these for generating future prompts.
 conversations.append({"role": "assistant", "content": greetings_prompt_response.choices[0].message.content})
 print('AI: ', greetings_prompt_response.choices[0].message.content)
 
